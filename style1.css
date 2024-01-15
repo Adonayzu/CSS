@@ -1,0 +1,56 @@
+/*Con el # y el nombre de titulo que eso lo agarre del html
+le cambie de color al titulo*/
+#titulo {
+    color:brown
+}
+/*agregando p y el nombre texto ya que texto aparece en el html
+se cambia de color*/
+p.texto {
+    color:aqua
+}
+/*Aqui igual cambia de color el p espacial o la que contenga esa palabra*/
+p.especial{
+    color:chocolate;
+}
+div p{
+    color:green
+}
+div h2, div h3 {
+    color:gold
+}
+/*Con esto del * y lo de abajo le puedo dar el tamaño que quiero a la letra de la pagina*/
+*{
+    font-size: 25px;
+}
+/*
+.color {
+    color: #ff0000;
+}
+*/
+/* de esta manera es mas facil ver todos los colores del numero 
+0 al 255 solo se cambia elnumero 0 del centro
+.color {
+    color: rgb(0,255,0);
+}
+*/
+.color {
+   /*  border: 5px black solid; */
+    /*
+    opciones
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+    border-style: solid; /* tipo de borde */
+    border-color:blue; /* el color del borde */
+    border-radius: 5px; /* el radio */
+    border-width: 5px; /* el grosor o ancho del borde */
+}
+
