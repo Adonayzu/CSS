@@ -53,4 +53,117 @@ div h2, div h3 {
     border-radius: 5px; /* el radio */
     border-width: 5px; /* el grosor o ancho del borde */
 }
+/* Este de fondo aparece en el html y lo de background-color lo resalta */
+#fondo {
+    background-color: red;
+    height: 200px; /* es la altura de la imagen que agrege */
+    background-image: url(coffee.png);
+    /* tambien se puede asi del size del tamaño el primer 200 es altura y el otro es ancho */
+    background-size: 100px 100px; /* esta auto, cover, contain  */
+    background-repeat: repeat-y; /* esto espara que no se repita la imagen colocando no-repeat pero si pongo repeat si */
+    background-position: center bottom;
+    
+}   
 
+.margen {
+    background-color: blueviolet;/* agregarlo color de fondo a lo que escribi */
+    margin:15px 20px 25px 30px; /* es el margen qu el dipero igual hay mas opciones */
+    padding: 30ps 25px 20px 15px;/* padding es relleno */
+    border:solid 1px black;
+    height: 200px;
+    width: 75px;
+    overflow: scroll;/* por si el contenido tiene un margen pequeño con esto puedo deslizar y verlo */
+    outline: 1px solid red;
+}
+
+.texto {
+    font-family: "Roboto", sans-serif;/* aqui se agrego lo del link  colocando roboto, lo demas es por si no agarra la de roboto */
+    text-align: center;/* ver si uno quiere el texto a la izquierda, center rigth justify */
+    text-decoration: underline; /* subrayar underline, overline */
+    text-shadow: 3px 5px 5px blue;
+
+}
+a:link {
+    color:blueviolet; /* con esto nos da el color del ling qu eagregamos en el html */
+}
+
+a:visited {
+    color:grey;/*  este es para los link que ya han sido visitados se pondra gris */
+}
+
+a:hover {
+    color:blue; /* este hover solo es para cuando estoy pasando el mause por encima por eso cambiara de color */
+}
+
+a:active {
+    color:red;/* este cuando yo estoy pinchando el link */
+}
+
+ul {
+    background-color: cyan;
+}
+
+table {
+    width:100%; /* Da todo el ancho de la tabla */
+    border-collapse: collapse;/* ajusta mejor la tabla */
+}
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color:tomato; /* da color a los th */
+    color:white; /* da color a la letra o fuente */
+    text-align: left;/* alinea el texto */
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color:#aaa;
+    cursor:pointer;
+}
+span {
+    display: block;
+    width: 300px;  /* ancho de lo que contiene el espan */
+    background-color: brown;/* el color del span */
+}
+.inline {
+    display: inline;
+}
+#position {
+    position: sticky; /* posicion ralativa, otra de absolute, y sticky*/
+    left: 20px;/* hace un a la izquierda de 20 px y maxio de top 25px */
+ /*    top: 25px; */
+
+}
+.left {
+    float: left; /* hace qu eltexto de left este en la izquierda */
+    width:200px;
+    height: 200px;
+}
+.rigth {
+    float: rigth;
+    
+}
+.container {
+    height: 200px;
+}
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+.inline-block {
+    display: inline-block;
+}
+.center {
+    padding:50px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color:red;
+}
